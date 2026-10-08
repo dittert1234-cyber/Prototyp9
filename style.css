@@ -1,0 +1,151 @@
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f4f6f5;color:#1e2522}header{background:#fff;display:flex;justify-content:space-between;align-items:center;padding:12px 24px;border-bottom:1px solid #dfe5e1}.brand img{height:58px;max-width:260px;object-fit:contain}.headright{text-align:right;font-size:12px;line-height:1.6}.appnav{display:flex;gap:8px;padding:10px 24px;background:#24312c;overflow:auto}.appnav button{white-space:nowrap}.navbtn,.toolbar button,.actions button,.section-title button,.order-actions button,.signature-actions button,.address-actions button{border:1px solid #cbd4cf;background:#fff;border-radius:7px;padding:9px 12px;cursor:pointer;font-weight:600}.navbtn{color:#fff;background:#34433d;border-color:#4b5c54}.navbtn.active{background:#2d7b54}.primary{background:#2d7b54!important;color:#fff!important;border-color:#2d7b54!important}.danger{color:#9b2c2c}.appview{max-width:1120px;margin:20px auto;padding:0 16px}.card{background:#fff;border:1px solid #dce3df;border-radius:10px;padding:16px;margin-bottom:14px}.section-title{display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap}.section-title h2{margin:0;font-size:18px}.subtext,.photohelp,.hint{color:#66736d;font-size:13px;margin:4px 0}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.grid label{display:flex;flex-direction:column;gap:5px;font-weight:600;font-size:13px}.wide{grid-column:1/-1}input,select,textarea{font:inherit;border:1px solid #cbd4cf;border-radius:7px;padding:10px;background:#fff;width:100%;min-width:0}textarea{resize:vertical}.address-actions{display:flex;align-items:center;gap:8px;margin-top:6px}.address-actions span{font-size:13px}.orderbar{display:flex;justify-content:space-between;gap:20px}.orderbar label{display:flex;gap:7px;align-items:center;font-size:13px}.rowhead,.employee-columns{display:grid;gap:8px;font-size:12px;color:#66736d;font-weight:700;margin-bottom:5px}.mathead,.setuphead{grid-template-columns:minmax(180px,1fr) 130px 120px 42px}.employee-columns,.employee-row{grid-template-columns:1.4fr 100px 100px 110px 130px 42px}.employee-row,.matrow,.setuprow,.masterrow{display:grid;gap:8px;align-items:center;margin:7px 0}.matrow select,.setuprow select{min-width:0}.matrow button,.setuprow button,.employee-row button,.masterrow button{border:0;background:#f1f3f2;border-radius:6px;height:40px;cursor:pointer}.employee-row .hours{background:#f4f6f5}.signature-grid{display:grid;grid-template-columns:130px 1fr 1fr;gap:12px}.signature-block{border:1px solid #dce3df;border-radius:8px;padding:10px}.signature-block canvas{width:100%;height:160px;background:#fff;border-bottom:1px solid #cbd4cf;touch-action:none}.signature-actions{display:flex;gap:6px;margin-top:6px}.filebutton{display:inline-flex!important;align-items:center;background:#fff;border:1px solid #cbd4cf;border-radius:7px;padding:9px 12px;cursor:pointer}.filebutton input{display:none}.photo-preview{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px}.photoitem{position:relative;border:1px solid #dce3df;border-radius:8px;overflow:hidden;background:#f7f8f7}.photoitem img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}.photoitem button{position:absolute;right:5px;top:5px;border:0;border-radius:50%;width:30px;height:30px;background:#fff;color:#a22;cursor:pointer;font-size:18px}.photoitem small{display:block;padding:6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.storage{margin:14px 0;padding:12px;background:#f6f8f7;border:1px solid #dce3df;border-radius:8px}.storage-top{display:flex;justify-content:space-between;gap:12px;font-size:13px}.bar{height:12px;background:#e3e8e5;border-radius:99px;overflow:hidden;margin:8px 0}.bar i{display:block;height:100%;width:0;background:#2d7b54}.storage small{color:#66736d}.order-list{display:grid;gap:10px}.order-card{border:1px solid #dce3df;border-radius:9px;padding:13px;background:#fbfcfb}.order-main{display:flex;justify-content:space-between;gap:15px}.order-card h3{margin:3px 0 8px;font-size:17px}.order-card p{margin:4px 0;color:#4f5b56;font-size:13px}.order-actions{display:flex;gap:6px;align-items:center;flex-wrap:wrap;justify-content:flex-end}.eyebrow{font-size:11px;text-transform:uppercase;color:#2d7b54;font-weight:800;letter-spacing:.05em}.masterhead{display:grid;gap:8px;color:#66736d;font-size:12px;font-weight:700;margin:10px 0 5px}.materialmasterhead{grid-template-columns:1fr 180px 42px}.setupmasterhead{grid-template-columns:1fr 180px 42px}.masterrow{grid-template-columns:1fr 180px 42px}.toolbar{display:flex;gap:8px;flex-wrap:wrap}.voice-row{display:grid;grid-template-columns:1fr auto;gap:8px}.actions{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}.empty-state{color:#66736d;text-align:center;padding:24px}.appointment{border-left:4px solid #2d7b54}
+/* Final preview refinements: travel costs, employee overview and prominent speech input. */
+.voice-row{display:grid;grid-template-columns:1fr 180px;gap:12px;align-items:stretch}
+.voice-row textarea{min-height:150px;font-size:17px}
+.voice-button{min-height:64px;font-size:17px;font-weight:800;border:0;border-radius:10px;background:#2d7b54;color:#fff;cursor:pointer;padding:12px 16px}
+.employee-mobile-columns{display:none}
+.employee-summary{margin-top:10px;padding:10px 12px;background:#f1f5f2;border:1px solid #dce3df;border-radius:8px;text-align:right;font-weight:800;color:#24312c}
+.travel-card{border-left:4px solid #6b7b73}
+@media(max-width:720px){
+header{padding:10px 14px}.headright{display:none}.brand img{height:48px}.appnav{padding:8px 12px}.appview{padding:0 10px;margin:12px auto}
+.grid,.signature-grid{grid-template-columns:1fr}.wide{grid-column:auto}
+
+/* Mitarbeiter: kompakte Übersicht wie in der bisherigen Version */
+.employee-columns{display:none}
+.employee-mobile-columns{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:6px;font-size:11px;color:#66736d;font-weight:800;margin:4px 0 3px}
+.employee-mobile-columns:before{content:'Mitarbeiter';grid-column:1/-1;font-size:12px}
+.employee-row{grid-template-columns:1fr 1fr 1fr 1fr 42px;gap:7px;margin:0 0 10px}
+.employee-row .ename{grid-column:1/-1;grid-row:1}
+.employee-row .beg{grid-column:1;grid-row:2}.employee-row .end{grid-column:2;grid-row:2}.employee-row .pause{grid-column:3;grid-row:2}.employee-row .hours{grid-column:4;grid-row:2}
+.employee-row .ename:before{content:''}
+.employee-row button{grid-column:5;grid-row:2;height:40px}
+.employee-row .ename,.employee-row .beg,.employee-row .end,.employee-row .pause,.employee-row .hours{height:44px}
+.employee-row .ename::placeholder{color:#9da4a1}
+.employee-summary{margin-top:4px}
+.voice-row{grid-template-columns:1fr}.voice-button{min-height:68px;font-size:19px}.voice-row textarea{min-height:180px;font-size:18px}
+.mathead,.setuphead{display:none}.matrow,.setuprow{grid-template-columns:1fr 100px 90px 42px}.order-main{flex-direction:column}.order-actions{justify-content:flex-start}
+.masterhead{display:none}.masterrow{grid-template-columns:1fr 100px 42px}.orderbar{align-items:flex-start;flex-direction:column}.storage-top{flex-direction:column}}
+@page{size:A4 portrait;margin:0}
+@media print{
+  html,body{width:210mm!important;height:297mm!important;margin:0!important;padding:0!important;background:#fff!important;color:#17211c!important;font-family:Arial,Helvetica,sans-serif!important}
+  body{font-size:6.2pt!important}
+  header{display:grid!important;grid-template-columns:50mm 1fr 42mm!important;align-items:center!important;gap:3mm!important;box-sizing:border-box!important;width:194mm!important;height:19mm!important;margin:7mm 8mm 0!important;padding:0 0 2mm!important;border-bottom:1.1mm solid #2d7b54!important;background:#fff!important}
+  .brand img{height:11mm!important;width:auto!important;max-width:48mm!important;object-fit:contain!important}
+  .headright{font-size:4.8pt!important;line-height:1.12!important;color:#486052!important;position:relative!important}
+  .headright b.print-service-title{position:absolute!important;right:0!important;top:0!important;text-align:right!important;color:#1f7b50!important;font-size:7.4pt!important;line-height:1.03!important}
+  .appnav,.actions,.toolbar,.order-actions,.storage,.appointment,.orderbar,.orderbar select,.address-actions,.signature-actions,.photos-card .section-title .filebutton,.photohelp,.subtext,.voice-button,.master-card{display:none!important}
+  main{margin:0!important;padding:0!important}
+  .appview{max-width:none!important;margin:0!important;padding:0!important}
+  #view-auftrag{display:block!important}
+  .print-page{display:block!important;width:194mm!important;margin:1.5mm 8mm 0!important;padding:0!important}
+  .card{box-sizing:border-box!important;background:#fff!important;border:1px solid #c9d0cc!important;border-radius:0!important;box-shadow:none!important;margin:0 0 1.1mm!important;padding:1.1mm 1.5mm!important;break-inside:avoid!important;page-break-inside:avoid!important}
+  .card h2{box-sizing:border-box!important;background:#187a4d!important;color:#fff!important;font-size:6.7pt!important;line-height:4.2mm!important;height:4.2mm!important;padding:0 1.3mm!important;margin:-1.1mm -1.5mm .8mm!important;font-weight:700!important}
+  .grid{gap:0!important}
+  .grid label{font-size:4.55pt!important;line-height:1.05!important;gap:.35mm!important}
+  input,select,textarea{box-sizing:border-box!important;font-size:5.5pt!important;line-height:1.05!important;padding:.55mm .8mm!important;border:1px solid #b9c1bd!important;border-radius:0!important;min-height:0!important;margin:0!important;height:4.6mm!important;background:#fff!important}
+  textarea{height:9.5mm!important;resize:none!important}
+  .grid label.wide{grid-column:1/-1!important}
+  .voice-row{display:block!important}
+  .employee-columns{display:grid!important;grid-template-columns:1.6fr .72fr .72fr .8fr .86fr 0!important;gap:0!important;font-size:4.55pt!important;line-height:1!important;margin:0!important;background:#e8ecea!important;border:1px solid #c5ccc8!important;padding:.75mm!important}
+  .employee-mobile-columns{display:none!important}
+  .employee-row{grid-template-columns:1.6fr .72fr .72fr .8fr .86fr 0!important;gap:0!important;margin:0!important}
+  .employee-row input{height:4.3mm!important;font-size:5.25pt!important;border-top:0!important;border-right:0!important}
+  .employee-row button{display:none!important}
+  .employee-row .hours{background:#f7f8f7!important}
+  .employee-summary{margin:0!important;padding:.7mm 1mm!important;text-align:right!important;font-size:5.25pt!important;font-weight:700!important;background:#f0f3f2!important;border:1px solid #c9d0cc!important;border-top:0!important}
+  .rowhead{font-size:4.55pt!important;line-height:1!important;gap:0!important;margin:0!important;background:#e8ecea!important;border:1px solid #c5ccc8!important;padding:.75mm!important}
+  .mathead,.matrow,.setuphead,.setuprow{grid-template-columns:minmax(0,1fr) 20mm 17mm 0!important;gap:0!important}
+  .matrow,.setuprow{margin:0!important;padding:0!important}
+  .matrow input,.setuprow input,.matrow select,.setuprow select{height:4.3mm!important;font-size:5.25pt!important;border-top:0!important;border-right:0!important}
+  .matrow button,.setuprow button{display:none!important}
+  .travel-card .grid{grid-template-columns:1fr 1fr!important}
+  .signature-grid{grid-template-columns:25mm 1fr 1fr!important;gap:.8mm!important}
+  .signature-block{border:1px solid #c9d0cc!important;border-radius:0!important;padding:.75mm!important;min-height:18mm!important}
+  .signature-block b{font-size:4.55pt!important}
+  .signature-block canvas{height:11.5mm!important;border-bottom:1px solid #cbd4cf!important}
+  .signature-intro{font-size:4.3pt!important;line-height:1.1!important;margin:0 0 .7mm!important}
+  .signature-card:after{content:"Der Auftraggeber erklärt mit Unterschrift die ordnungsgemäße Ausführung der Arbeiten. Mit Auftragserteilung erklärt sich der Auftraggeber mit unseren Geschäftsbedingungen einverstanden. Es gelten die Stundensätze, die auf unserer Internetseite veröffentlicht sind. Die Arbeitszeit beginnt mit Verlassen unseres Betriebes in Baunatal und endet bei Rückkehr. Materialkosten werden je nach Verbrauch in Rechnung gestellt. Da es sich bei Arbeiten an Dächern um eine sehr gefahrenträchtige Arbeit handelt, entstehen Kosten der Baustelleneinrichtung. Die Baustelleneinrichtung beinhaltet Sicherungsmaßnahmen unterschiedlicher Art, die vom Gesetzgeber bei Dacharbeiten vorgeschrieben sind. Auch bei Festpreisangeboten können Zusatzkosten entstehen. Sie erhalten eine Rechnung von uns, die Zahlung ist dann innerhalb 8 Tagen ohne Abzug fällig. Unsere aktuellen Stundensätze und vollständigen Geschäftsbedingungen können Sie jederzeit auf unserer Internetseite einsehen.";display:block;font-size:3.45pt!important;line-height:1.08!important;color:#222!important;margin-top:.8mm!important;border-top:1px solid #d4dad7!important;padding-top:.7mm!important}
+  .photos-card{display:block!important;break-before:page!important;page-break-before:always!important;margin-top:0!important;padding:0!important;border:0!important}
+  .photos-card .photo-preview{display:grid!important;grid-template-columns:1fr 1fr!important;gap:3mm!important;padding:0!important}
+  .photoitem{height:118mm!important;border:1px solid #d0d6d2!important;break-inside:avoid!important;page-break-inside:avoid!important;display:flex!important;align-items:center!important;justify-content:center!important}
+  .photoitem img{width:100%!important;height:100%!important;object-fit:contain!important;border:0!important}
+  .photoitem button,.photoitem small{display:none!important}
+  .print-page > .card:not(.photos-card){break-inside:avoid!important;page-break-inside:avoid!important}
+}
+
+/* PROTOTYP6: separate PDF document, independent from the app UI */
+#pdfTemplate{display:none}
+#pdfTemplate.printing{display:block!important;position:fixed!important;left:0!important;top:0!important;width:100%!important;z-index:99999!important;background:#fff!important}
+#pdfTemplate.printing .pdf-sheet{display:block}
+.pdf-sheet{box-sizing:border-box;width:194mm;min-height:285mm;margin:0 auto;padding:4mm 0 3mm;background:#fff;color:#17211c;font-family:Arial,Helvetica,sans-serif}
+.pdf-head{height:19mm;display:grid;grid-template-columns:48mm 1fr 42mm;align-items:center;gap:3mm;border-bottom:1mm solid #2d7b54}
+.pdf-logo img{width:47mm;max-height:12mm;object-fit:contain}
+.pdf-company{font-size:6.2pt;line-height:1.2;color:#53625b}
+.pdf-title{text-align:right;color:#1f7b50;font-size:10pt;font-weight:800;line-height:1.05}.pdf-title span{font-size:7pt}
+.pdf-info,.pdf-table,.pdf-sign{width:100%;border-collapse:collapse;table-layout:fixed}
+.pdf-info{margin-top:2mm;font-size:6.2pt}
+.pdf-info th{background:#e7ebe9;color:#53625b;text-align:left;font-weight:700;padding:1mm;border:1px solid #c5ccc8}
+.pdf-info td{padding:1.1mm;border:1px solid #c5ccc8;font-weight:600;vertical-align:top}
+.pdf-section{margin-top:1.7mm;border:1px solid #c5ccc8;break-inside:avoid;page-break-inside:avoid}
+.pdf-bar{height:4.7mm;line-height:4.7mm;background:#187a4d;color:#fff;font-size:7.1pt;font-weight:800;padding:0 1.5mm}
+.pdf-work{min-height:11mm;padding:1.4mm;font-size:6.1pt;line-height:1.25}
+.pdf-table{font-size:5.9pt}.pdf-table th{background:#e7ebe9;font-weight:800;text-align:left}.pdf-table th,.pdf-table td{border:1px solid #c5ccc8;padding:.85mm;vertical-align:middle}.pdf-table tfoot td{background:#f0f3f2;font-weight:800;text-align:right}.pdf-empty{text-align:left;color:#69746f}
+.pdf-table th:nth-child(1){width:44%}.pdf-table th:nth-child(2){width:18%}.pdf-table th:nth-child(3){width:18%}.pdf-table th:nth-child(4){width:10%}.pdf-table th:nth-child(5){width:10%}
+.pdf-confirm-text{padding:1.1mm 1.5mm;font-size:5.7pt}
+.pdf-sign{font-size:5.7pt}.pdf-sign th{background:#e7ebe9;text-align:left;border:1px solid #c5ccc8;padding:.8mm}.pdf-sign td{border:1px solid #c5ccc8;padding:1mm;height:16mm;vertical-align:top}.pdf-sign img{max-width:100%;height:13mm;object-fit:contain}
+.pdf-agb{font-size:4.1pt;line-height:1.12;padding:1.1mm 1.5mm;border-top:1px solid #d0d6d3}
+.pdf-footer{font-size:4.1pt;color:#5c6862;margin-top:1mm}.pdf-footer span{float:right}
+@media print{
+  body>*:not(#pdfTemplate){display:none!important}
+  #pdfTemplate.printing{position:static!important;display:block!important}
+  #pdfTemplate.printing .pdf-sheet{width:194mm!important;height:285mm!important;min-height:285mm!important;margin:0 auto!important;padding:4mm 0 3mm!important}
+  @page{size:A4 portrait;margin:6mm 8mm}
+}
+
+/* PROTOTYP7: Mitarbeiter-Zeiterfassung wieder als kompakte Tabellenzeile */
+@media(max-width:720px){
+  .employee-columns{
+    display:grid!important;
+    grid-template-columns:minmax(95px,1.55fr) .72fr .72fr .82fr .88fr 36px!important;
+    gap:3px!important; align-items:center!important;
+    font-size:10px!important; line-height:1.05!important;
+    padding:7px 5px!important; margin:0!important; overflow:hidden!important;
+  }
+  .employee-columns span{min-width:0!important}
+  .employee-mobile-columns{display:none!important}
+  .employee-row{
+    display:grid!important;
+    grid-template-columns:minmax(95px,1.55fr) .72fr .72fr .82fr .88fr 36px!important;
+    gap:3px!important; align-items:center!important;
+    margin:0!important; padding:5px!important; overflow:hidden!important;
+  }
+  .employee-row .ename,.employee-row .beg,.employee-row .end,.employee-row .pause,.employee-row .hours{
+    grid-column:auto!important; grid-row:auto!important;
+    width:100%!important; min-width:0!important; box-sizing:border-box!important;
+    height:42px!important; padding:6px 5px!important; font-size:13px!important;
+  }
+  .employee-row button{grid-column:auto!important;grid-row:auto!important;width:36px!important;height:42px!important;padding:0!important}
+  .employee-summary{text-align:right!important;font-size:12px!important;padding:7px!important}
+}
+@media print{
+  html,body{background:#fff!important}
+  #pdfTemplate{display:block!important;visibility:visible!important}
+  #pdfTemplate.printing{display:block!important;visibility:visible!important;position:static!important}
+  #pdfTemplate.printing *{visibility:visible!important}
+  body > *:not(#pdfTemplate){display:none!important}
+}
+
+/* PROTOTYP8: one dedicated PDF page per construction photo */
+#pdfPhotoPages{display:block}
+.pdf-photo-page{width:194mm;height:285mm;box-sizing:border-box;margin:0 auto;padding:0 0 4mm;break-before:page;page-break-before:always;background:#fff;color:#17211c;font-family:Arial,Helvetica,sans-serif}
+.pdf-photo-head{height:18mm;box-sizing:border-box;display:grid;grid-template-columns:43mm 1fr 25mm;align-items:center;gap:3mm;border-bottom:1mm solid #2d7b54}
+.pdf-photo-head img{width:40mm;max-height:10mm;object-fit:contain}.pdf-photo-head b{font-size:8pt;color:#1f7b50}.pdf-photo-head div{font-size:6pt;line-height:1.2}.pdf-photo-count{text-align:right;font-weight:700}
+.pdf-photo-frame{height:250mm;margin-top:5mm;border:1px solid #c5ccc8;display:flex;align-items:center;justify-content:center;background:#fff}.pdf-photo-frame img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}.pdf-photo-caption{font-size:5.5pt;color:#53625b;margin-top:2mm}
+@media print{#pdfPhotoPages{display:block!important}.pdf-photo-page{break-before:page!important;page-break-before:always!important}}
+
+/* PROTOTYP 8 – Terminarten und Bildmarkierung */
+.photoitem{position:relative}
+.photoitem-actions{display:flex;gap:6px;justify-content:center;margin-top:5px}.photoitem-actions button{font-size:12px;padding:5px 8px}.photoitem-actions button:first-child{color:#b00000}
+.photo-editor{position:fixed;inset:0;background:rgba(0,0,0,.65);z-index:9999;display:flex;align-items:center;justify-content:center;padding:12px}.photo-editor[hidden]{display:none}.photo-editor-panel{background:#fff;border-radius:14px;width:min(96vw,900px);max-height:94vh;overflow:auto;padding:16px;box-sizing:border-box}.photo-editor-head{display:flex;align-items:center;justify-content:space-between;font-size:18px}.photo-editor-head button{font-size:24px;border:0;background:none;cursor:pointer}.photo-editor-panel p{margin:8px 0 12px;color:#5d6862}.photo-canvas-wrap{width:100%;display:flex;justify-content:center;background:#f3f4f3;border:1px solid #ccd3cf;border-radius:8px;overflow:auto}.photo-canvas-wrap canvas{max-width:100%;height:auto;touch-action:none;display:block}.photo-editor-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:12px;flex-wrap:wrap}
+.pdf-photo-page{height:285mm;padding:0 0 3mm}.pdf-photo-grid{height:252mm;margin-top:4mm;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:4mm}.pdf-photo-cell{min-width:0;min-height:0;display:flex;flex-direction:column}.pdf-photo-cell .pdf-photo-frame{height:auto;flex:1;min-height:0;margin-top:0}.pdf-photo-cell .pdf-photo-frame img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}.pdf-photo-caption{font-size:5.5pt;color:#53625b;margin-top:1.5mm;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.pdf-photo-page .pdf-photo-count{text-align:right;font-weight:700}
+@media(max-width:700px){.photo-editor{padding:6px}.photo-editor-panel{width:100%;padding:12px}.photo-editor-actions button{min-height:42px}.pdf-photo-grid{gap:3mm}}
